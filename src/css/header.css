@@ -1,5 +1,11 @@
 .header {
-  padding: 20px 0;
+  padding: 20px 20px;
+}
+
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
 }
 
 .nav-list {
@@ -7,15 +13,36 @@
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
+  display: none;
 }
 
 .nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  font-size: 14px;
+
+}
+.social {
+  display: flex;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link .item:hover,
+.nav-link .item:focus {
   color: #747bff;
+}
+.menu-open-btn {
+  background-color: #be1b1b;
+  border: none;
+}
+
+.icon-burger {
+  fill:black;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.41px;
+  letter-spacing: -0.02em;
 }
