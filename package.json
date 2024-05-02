@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/MagicOnНand-gr18",
+    "build": "vite build --base=/MagicOn-and-gr18/",
     "preview": "vite preview"
   },
   "devDependencies": {
