@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/current-year.js"],"sourcesContent":["const currentYear = () => new Date().getFullYear();\nconst currYearRef = document.querySelector('.js-year');\n\ncurrYearRef.textContent = currentYear();"],"names":["currentYear","currYearRef"],"mappings":"ssBAAA,MAAMA,EAAc,IAAM,IAAI,KAAM,EAAC,YAAW,EAC1CC,EAAc,SAAS,cAAc,UAAU,EAErDA,EAAY,YAAcD,EAAa"}
