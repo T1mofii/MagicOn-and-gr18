@@ -1,4 +1,6 @@
 .footer {
+  max-width: 1216px;
+  margin: 0 auto;
   border-radius: 30px;
   background-color: var(--main);
   color: var(--background);
