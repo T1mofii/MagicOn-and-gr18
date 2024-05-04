@@ -4,3 +4,7 @@
 
 // Add current year in document
 import './js/current-year';
+
+//Functions for scroll window.
+//Remove the comment from the next line after adding sections.
+// import './js/scroll';
