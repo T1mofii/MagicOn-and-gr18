@@ -20,11 +20,6 @@
     margin-bottom: 20px;
 }
 
-.container {
-    width: auto;
-    margin: 0 auto;
-}
-
 .hero-title-accent {
     color: var(--accent);
 }
