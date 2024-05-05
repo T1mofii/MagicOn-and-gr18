@@ -3,28 +3,30 @@
 // Add 'js-mobile-menu' class for mobile menu (in html file)
 // Craete 'is-open' class for open mobile menu (in css file)
 
-// Example is-open css-class for open mobile menu 
+// Example is-open css-class for open mobile menu
 // .mobile-menu {
 //   ...
-//   transform: translateX(100vw); 
+//   transform: translateX(100vw);
 //     transition: transform 250ms cubic - bezier(0.4, 0, 0.2, 1);
 //     ...
 // }
 
 // .mobile-menu.is-open {
-//   transform: translateX(0); 
+//   transform: translateX(0);
 // }
 
 const openMenuBtn = document.querySelector('.js-open-btn');
 const mobileMenuRef = document.querySelector('.js-mobile-menu');
-const closeMenuBtn = document.querySelector(
-  '.js-close-btn'
-);
+const closeMenuBtn = document.querySelector('.js-close-btn');
 
-openMenuBtn.addEventListener('click', () => {
-  mobileMenuRef.classList.add('is-open');
-});
+if (mobileMenuRef) {
+  openMenuBtn &&
+    openMenuBtn.addEventListener('click', () => {
+      mobileMenuRef.classList.add('is-open');
+    });
 
-closeMenuBtn.addEventListener('click', () => {
-  mobileMenuRef.classList.remove('is-open');
-});
+  closeMenuBtn &&
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenuRef.classList.remove('is-open');
+    });
+}
