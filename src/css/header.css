@@ -1,14 +1,19 @@
-header {
+.header-box {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
   position: relative;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 375px;
-  padding: 20px;
+  padding: 20px 20px;
   margin: auto;
 }
 
@@ -110,8 +115,7 @@ header {
   }
   
   .header-container {
-    padding: 26px;
-    max-width: 768px;
+    padding: 26px 32px;
   }
 }
 
@@ -133,10 +137,7 @@ header {
     padding-right: 203px;
   }
   
-  .header-container {
-    padding: 26px;
-    max-width: 1280px;
-  }
+  
 }
 /*Menu*/
 .header-menu {
@@ -150,14 +151,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: black;
   padding: 20px 20px 40px 20px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .header-menu-close-btn {
   display: block;
   margin-left: auto;
-  margin-bottom: 186px;
+  margin-bottom: 120px;
   background-color: transparent;
   width: 34px;
   height: 34px;
@@ -205,4 +212,9 @@ header {
 .menu-social-link .icon:hover,
 .menu-social-link .icon:focus {
   stroke: var(--hover-color);
+}
+.menu-nav-item.current {
+  padding-bottom: 2px;
+  margin-bottom: 14px;
+  
 }
