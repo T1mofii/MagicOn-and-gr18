@@ -6,5 +6,7 @@
 import './js/current-year';
 
 //Functions for scroll window.
-//Remove the comment from the next line after adding sections.
-// import './js/scroll';
+import './js/hero-scroll-handler';
+import './js/footer-scroll-handler';
+//import './js/header-scroll-handler';
+//import './js/mobile-menu-handler';

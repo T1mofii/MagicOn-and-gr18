@@ -1,4 +1,4 @@
-const onScrollUp = () => {
+export const onScrollUp = () => {
   if (window.scrollY != 0) {
     setTimeout(function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -6,7 +6,12 @@ const onScrollUp = () => {
   }
 }
 
-const onScrollDown = () => {
+export const onScrollToElement = (elementId) => {
+  const element = document.getElementById(elementId);
+  element && element.scrollIntoView({ behavior: 'smooth' }); 
+}
+
+export const onScrollDown = () => {    
     const documentHeight = document.documentElement.scrollHeight;
     const scrollPosition = window.scrollY;
 
@@ -17,8 +22,7 @@ const onScrollDown = () => {
     }
 }
 
-const scrollUpBtn = document.querySelector('.js-footer-scroll');
-scrollUpBtn && scrollUpBtn.addEventListener("click", onScrollUp);
 
-const scrollDownBtn = document.querySelector('.js-hero-scroll');
-scrollDownBtn && scrollDownBtn.addEventListener("click", onScrollDown);
+
+
+
