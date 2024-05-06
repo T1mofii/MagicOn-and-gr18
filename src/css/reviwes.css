@@ -1,22 +1,3 @@
-/*  Reviews mobile section START */
-/* .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.container {
-  min-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-.section-title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--main);
-}
 .reviews-section-title {
   margin-bottom: 24px;
 }
