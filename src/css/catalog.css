@@ -2,6 +2,10 @@
   padding: 18px 36px;
 } */
 
+.img-catalog {
+  padding: 18px 36px 18px 35px;
+}
+
 .catalog-name {
   font-family: Gilroy;
   font-size: 32px;
@@ -73,6 +77,10 @@
   .catalog-name {
     font-size: 48px;
     max-width: 280px;
+  }
+
+  .img-catalog {
+    padding: 10px 6px;
   }
 
   .catalog-item-name {
