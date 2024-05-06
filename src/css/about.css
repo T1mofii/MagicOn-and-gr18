@@ -1,12 +1,14 @@
 /* about-us */
 
 .about-us {
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 0px 20px;
-  width: 100%;
-  margin: 30px 0;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  /* padding: 0px 20px; */
+  /* margin: 30px 0; */
 }
 
 .about-us-container {
@@ -29,11 +31,12 @@
 
 .about-us-content-text {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 28px;
-  max-width: 295px;
+  /* max-width: 295px; */
   padding: 0 20px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .about-us-title {
@@ -99,14 +102,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-us {
+  /* .about-us {
     max-width: 1279px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding: 0 32px;
-  }
+  } */
 
-  .about-us-container {
+  /* .about-us-container {
     max-width: 1115px;
-  }
+  } */
 
   .about-us-content {
     border-radius: 50px;
@@ -116,6 +121,11 @@
 
   .about-us-content-text {
     max-width: 704px;
+    padding: 0 60px;
+  }
+
+  .about-us-button {
+    margin-left: 60px;
   }
 
   .about-us-title {
@@ -137,15 +147,17 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about-us {
+  /* .about-us {
     max-width: 1280px;
+    padding-left: 33px;
+    padding-right: 33px;
     padding: 0 65px;
     margin-bottom: 50px;
     margin: 0 auto;
-  }
+  } */
 
   .about-us-container {
-    max-width: 1150px;
+    /* max-width: 1150px; */
     display: flex;
     flex-direction: row;
     gap: 40px;
