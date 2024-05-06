@@ -40,13 +40,19 @@
 
 .hero-photos-list {
   min-width: 108px;
+  height: 44px;
   position: relative;
   padding: 0;
   margin: 0;
 }
 
-.hero-photos-list > :nth-child(n + 2) {
+.hero-photos-list > :nth-child(n - 2) {
   position: absolute;
+}
+
+.hero-photos-list > :nth-child(1) {
+  top: 0;
+  left: 0;
 }
 
 .hero-photos-list > :nth-child(2) {
@@ -124,6 +130,7 @@
 
   .hero-photos-list {
     width: 136px;
+    height: 60px;
   }
 
   .hero-photos-list > :nth-child(2) {
