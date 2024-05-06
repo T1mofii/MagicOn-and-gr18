@@ -1,0 +1,258 @@
+<<<<<<< HEAD
+=======
+.header-box {
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  position: relative;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.nav-list {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  display: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--hover-color);
+}
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: block;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-social-list {
+  display: none;
+  gap: 10px;
+}
+
+.social-link .icon:hover,
+.social-link .icon:focus {
+  fill: var(--accent);
+}
+.menu-open-btn {
+  background-color: var(--background);
+  border: none;
+}
+
+.icon-burger {
+  width: 34px;
+  height: 34px;
+  stroke: var(--main);
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.41px;
+  letter-spacing: -0.02em;
+}
+
+.social-link .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 20px;
+    line-height: 24.26px;
+  }
+
+  .icon-burger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-container {
+    padding: 26px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-list {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-social-list {
+    display: flex;
+  }
+
+  .logo {
+    padding-right: 203px;
+  }
+}
+
+/*Menu*/
+.header-menu {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('/img/header/image-background-header-1x.jpg');
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 20px 20px 40px 20px;
+  transform: translateX(100vw);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu.is-open {
+  transform: translateX(0);
+}
+
+.header-menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 120px;
+  background-color: transparent;
+  width: 34px;
+  height: 34px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+  color: var(--background);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu-header-social-list {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.menu-social-link .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 34px;
+  width: 34px;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+}
+
+.menu-social-link .icon {
+  fill: var(--background);
+  width: 18px;
+  height: 18px;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-link .icon:hover,
+.menu-social-link .icon:focus {
+  stroke: var(--hover-color);
+}
+
+.menu-nav-item.current {
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    width: 300px;
+    padding: 26px 32px 50px 32px;
+  }
+
+  .menu-nav-list {
+    gap: 32px;
+  }
+
+  .header-menu {
+    background-image: url('/img/header/image-background-header-tab-1x.jpg');
+  }
+}
+
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .header-menu {
+    background-image: url('/img/header/image-background-header-2x.jpg');
+  }
+}
+
+@media (min-resolution: 2dppx),
+  (min-resolution: 192dpi) and (min-width: 768px) {
+  .header-menu {
+    background-image: url('/img/header/image-background-header-tab-2x.jpg');
+  }
+}
+>>>>>>> 2c0c4de8232dd3c2856e20547759b4018c677ab0
