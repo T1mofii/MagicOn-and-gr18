@@ -239,6 +239,11 @@
   .header-menu {
     background-image: url('/img/header/image-background-header-tab-1x.jpg');
   }
+
+  .menu-social-link .link {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
