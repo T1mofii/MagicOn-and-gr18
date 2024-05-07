@@ -61,20 +61,23 @@
   color: rgba(12, 12, 12, 0.7);
 }
 
+.about-us-btn {
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
 .about-us-button {
   display: block;
   align-self: start;
   border-radius: 16px;
   width: 160px;
   height: 48px;
-  margin-left: 20px;
-  margin-bottom: 40px;
   background: #3350e9;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 
-.about-us-viev {
+.about-us-view {
    font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -131,6 +134,10 @@
     line-height: 1.25;
   }
 
+  .about-us-btn {
+  padding-left: 20px;
+}
+
   .about-us-images {
     border-radius: 50px;
     max-width: 704px;
@@ -163,16 +170,15 @@
 
   .about-us-content-text {
     padding: 0;
-    margin-top: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     gap: 40px;
   }
 
-  .about-us-button {
-    margin-left: 60px;
-    margin-bottom: 80px;
-  }
+  .about-us-btn {
+  padding-left: 60px;
+}
 
   .about-us-images {
     max-width: 530px;
