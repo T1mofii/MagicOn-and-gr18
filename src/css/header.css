@@ -32,10 +32,16 @@
   letter-spacing: 0.02em;
   line-height: 1.5;
   font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.nav-item .item{
+  padding: 2px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item .item:hover,
+.nav-item .item:focus {
   color: var(--hover-color);
 }
 
@@ -62,13 +68,17 @@
   gap: 10px;
 }
 
-.social-link .icon:hover,
-.social-link .icon:focus {
+.social-link:hover,
+.social-link:focus {
   fill: var(--accent);
 }
 .menu-open-btn {
+  display: flex;
   background-color: var(--background);
   border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-burger {
@@ -137,7 +147,11 @@
   }
 
   .logo {
-    padding-right: 203px;
+    margin-right: 203px;
+  }
+
+  .header-menu {
+    display: none;
   }
 }
 
@@ -168,9 +182,9 @@
 }
 
 .header-menu-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 120px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: transparent;
   width: 34px;
   height: 34px;
@@ -184,11 +198,16 @@
   cursor: pointer;
 }
 
+.menu-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .menu-nav-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: auto;
+  margin: auto 0;
   color: var(--background);
   text-align: center;
   margin-bottom: 10px;
@@ -205,6 +224,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  padding: 2px 0;
   height: 34px;
   width: 34px;
   border: 1px solid rgba(251, 251, 251, 0.1);
@@ -218,9 +238,14 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-social-link .link:hover,
+.menu-social-link .link:focus {
+  fill: var(--background);
+  stroke: var(--hover-color);
+}
+
 .menu-social-link .icon:hover,
 .menu-social-link .icon:focus {
-  stroke: var(--hover-color);
   fill: var(--background);
 }
 
@@ -245,6 +270,11 @@
   .menu-social-link .link {
     height: 36px;
     width: 36px;
+  }
+  .header-menu-close-btn {
+    position: absolute;
+    top: 26px;
+    right: 32px;
   }
 }
 
