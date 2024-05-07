@@ -14,10 +14,13 @@
             <label class="form-label">
               <input
                 class="form-input"
-                name="username"
+                type="text"
+                name="user-name"
+                id="user-name"
                 placeholder="Name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Name should contain only letters and apostrophes"
                 required
-                pattern="[A-Za-z0-9]{3,20}"
               />
             </label>
           </div>
@@ -25,9 +28,12 @@
             <label class="form-label">
               <input
                 class="form-input"
-                id="email"
-                name="email"
+                type="email"
+                name="user-email"
+                id="user-email"
                 placeholder="Email"
+                pattern="[A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8}"
+                title="Please enter a valid email address"
                 required
               />
             </label>
@@ -36,13 +42,13 @@
             <label class="form-label">
               <input
                 class="form-input"
-                id="phone"
-                name="phone"
                 type="tel"
-                title="Номер телефону повинен містити 10 цифр"
-                required
-                pattern="[0-9]{10}"
+                name="user-phone"
+                id="user-phone"
+                title="+380-XX-XXX-XX-XX"
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
                 placeholder="+380"
+                required
               />
             </label>
           </div>
