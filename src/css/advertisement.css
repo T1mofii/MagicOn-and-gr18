@@ -148,6 +148,9 @@
   .a-text {
     width: 690px;
   }
+  .a-link {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 1280px),
