@@ -39,11 +39,17 @@
 }
 
 .hero-photos-list {
+  display: flex;
   min-width: 108px;
   height: 44px;
   position: relative;
   padding: 0;
   margin: 0;
+}
+
+.hero-photo {
+  width: 44px;
+  height: 44px;
 }
 
 .hero-photos-list > :nth-child(n - 2) {
@@ -130,7 +136,12 @@
 
   .hero-photos-list {
     width: 136px;
-    height: 60px;
+    height: 56px;
+  }
+
+  .hero-photo {
+    width: 56px;
+    height: 56px;
   }
 
   .hero-photos-list > :nth-child(2) {
@@ -164,6 +175,12 @@
 
   .hero-photos-list {
     width: 146px;
+    height: 60px;
+  }
+
+  .hero-photo {
+    width: 60px;
+    height: 60px;
   }
 
   .hero-photos-list > :nth-child(2) {
