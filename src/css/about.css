@@ -1,191 +1,122 @@
-/* about-us */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
 
-.about-us {
+.about-info-wrapper {
   width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-  /* padding: 0px 20px; */
-  /* margin: 30px 0; */
-}
-
-.about-us-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.about-us-content {
-  box-sizing: border-box;
-  border-radius: 30px;
-  max-width: 335px;
-  background: #f3f3f3;
   padding-top: 40px;
-  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  background-color: var(--cards-color);
+}
+
+.about-section-title {
+  margin-bottom: 28px;
+}
+
+.about-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  row-gap: 20px;
+  margin-bottom: 40px;
 }
 
-.about-us-content-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 28px;
-  /* max-width: 295px; */
-  padding: 0 20px;
-  /* margin: 0 auto; */
-}
-
-.about-us-title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-}
-
-.about-us-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.about-us-text {
+.about-info-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
 }
 
-.about-us-button {
+.about-view-wrapper {
+  width: 160px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--accent);
   border-radius: 16px;
-  width: 160px;
-  height: 48px;
-  margin-left: 20px;
-  margin-bottom: 40px;
-  background: #3350e9;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-view-wrapper:hover,
+.about-view-wrapper:focus {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.about-view {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.29;
-  color: #fbfbfb;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
+  line-height: 1.28571;
+  text-align: center;
+  color: var(--background);
 }
 
-.about-us-button:hover {
-  background: #1f3cd4;
-}
-
-.about-us-images {
-  border-radius: 30px;
-  max-width: 335px;
-  height: 446px;
-  background: rgba(12, 12, 12, 0.2);
-  margin: 0 auto;
-}
-
-.about-us-img {
-  display: flex;
+.about-image-wrapper {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-  /* .about-us {
-    max-width: 1279px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding: 0 32px;
-  } */
+  .about-container {
+    row-gap: 40px;
+  }
 
-  /* .about-us-container {
-    max-width: 1115px;
-  } */
-
-  .about-us-content {
-    border-radius: 50px;
-    max-width: 704px;
+  .about-section-title {
     margin-bottom: 40px;
   }
 
-  .about-us-content-text {
-    max-width: 704px;
-    padding: 0 60px;
+  .about-info-wrapper {
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 80px;
+    border-radius: 50px;
   }
 
-  .about-us-button {
-    margin-left: 60px;
+  .about-info {
+    margin-bottom: 60px;
   }
 
-  .about-us-title {
-    font-size: 48px;
-    line-height: 0.92;
-  }
-
-  .about-us-text {
+  .about-info-item {
     font-size: 16px;
     line-height: 1.25;
   }
 
-  .about-us-images {
+  .about-image-wrapper {
     border-radius: 50px;
-    max-width: 704px;
-    height: 512px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  /* .about-us {
-    max-width: 1280px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding: 0 65px;
-    margin-bottom: 50px;
-    margin: 0 auto;
-  } */
-
-  .about-us-container {
-    /* max-width: 1150px; */
-    display: flex;
+  .about-container {
     flex-direction: row;
-    gap: 40px;
+    justify-content: space-between;
   }
 
-  .about-us-content {
-    max-width: 580px;
-    height: 532px;
-    padding-top: 0;
-    margin-bottom: 0;
+  .about-info {
+    margin-bottom: 40px;
   }
 
-  .about-us-content-text {
-    padding: 0;
-    margin-top: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
-    gap: 40px;
+  .about-image-wrapper {
+    max-width: 520px;
   }
 
-  .about-us-button {
-    margin-left: 60px;
-    margin-bottom: 80px;
+  .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .about-us-images {
-    max-width: 530px;
-    height: 532px;
-    margin: 0 auto;
+  .about-info-wrapper {
+    width: 580px;
   }
 }
