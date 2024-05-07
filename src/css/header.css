@@ -68,8 +68,8 @@
   gap: 10px;
 }
 
-.social-link:hover .icon,
-.social-link:focus .icon {
+.social-link .link:hover .icon,
+.social-link .link:focus .icon {
   fill: var(--accent);
 }
 .menu-open-btn {
@@ -238,8 +238,8 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-social-link:hover .icon,
-.menu-social-link:focus .icon {
+.menu-social-link .link:hover .icon,
+.menu-social-link .link:focus .icon {
   fill: var(--background);
   stroke: var(--hover-color);
 }
