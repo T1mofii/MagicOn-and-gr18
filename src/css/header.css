@@ -57,6 +57,7 @@
   background-color: var(--accent);
   border-radius: 50%;
   display: block;
+  bottom: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -236,11 +237,10 @@
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-social-link:hover,
-.menu-social-link:focus {
+.menu-social-link .link:hover,
+.menu-social-link .link:focus {
   fill: var(--background);
   stroke: var(--hover-color);
-  
 }
 
 .menu-social-link .icon:hover,
@@ -269,6 +269,11 @@
   .menu-social-link .link {
     height: 36px;
     width: 36px;
+  }
+  .header-menu-close-btn {
+    position: absolute;
+    top: 26px;
+    right: 32px;
   }
 }
 
